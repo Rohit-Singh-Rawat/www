@@ -8,6 +8,8 @@ export default function BlurGradient() {
 				maskImage:
 					'linear-gradient(rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.4) 80%, transparent)',
 			}}
+			aria-hidden='true'
+			role='presentation'
 		></div>
 	);
 }

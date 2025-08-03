@@ -26,11 +26,16 @@ const AgeComponent = ({ birthDate }: { birthDate: string }) => {
 	return (
 		<span className='relative'>
 			{isToday && (
-				<span className='absolute -top-6 sm:-top-7 left-1/2 -translate-x-1/2 text-xs sm:text-xs text-primary animate-bounce bg-secondary/20 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full border border-primary/20 whitespace-nowrap'>
+				<span
+					className='absolute -top-6 sm:-top-7 left-1/2 -translate-x-1/2 text-xs sm:text-xs text-primary animate-bounce bg-secondary/20 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full border border-primary/20 whitespace-nowrap'
+					role='status'
+					aria-live='polite'
+					aria-label='Birthday celebration message'
+				>
 					🎂 Happy Birthday! 🎉
 				</span>
 			)}
-			{age}-year-old
+			<span aria-label={`${age} years old`}>{age} yo</span>
 		</span>
 	);
 };
@@ -39,7 +44,17 @@ const Intro = () => {
 	const birthDate = process.env.NEXT_PUBLIC_BIRTH_DATE || '2003-09-01';
 
 	return (
-		<div className='mt-6 sm:mt-8 space-y-4 sm:space-y-6 lg:space-y-8 font-thin'>
+		<section
+			className='mt-6 sm:mt-8 space-y-4 sm:space-y-6 lg:space-y-8 font-thin'
+			aria-labelledby='intro-heading'
+			role='region'
+		>
+			<h2
+				id='intro-heading'
+				className='sr-only'
+			>
+				About Rohit Singh Rawat
+			</h2>
 			<p className='text-sm sm:text-base text-muted-foreground leading-relaxed sm:leading-relaxed'>
 				Hey, I'm <span className='text-foreground'>Rohit Singh Rawat</span>, a{' '}
 				<AgeComponent birthDate={birthDate} /> Software Engineer who finds
@@ -63,7 +78,7 @@ const Intro = () => {
 				<span className='text-foreground'>gym</span>, playing badminton, or{' '}
 				<span className='text-foreground'>web surfing</span>.
 			</p>
-		</div>
+		</section>
 	);
 };
 

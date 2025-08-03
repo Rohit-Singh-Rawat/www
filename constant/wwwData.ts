@@ -2,8 +2,8 @@ import { ExperienceItem } from '@/types';
 
 export const experienceData: ExperienceItem[] = [
 	{
-		name: 'Launchpad Labs',
-		time: 'Current',
+		name: 'Linkverse Labs',
+		time: 'May 2025',
 		isPresent: true,
 		description: [
 			'Building innovative solutions with cutting-edge technologies and scalable architectures.',
@@ -50,17 +50,10 @@ export const projectData = [
 			'AWS',
 		],
 		github: 'https://github.com/rohitsinghrawat/echo-chat',
-		url: 'https://echo-chat.vercel.app',
+		url: 'https://echo.rsrcraft.me',
 		time: 'Nov 2024 - Dec 2024',
 	},
-	{
-		name: 'GitHub Timeline',
-		description: 'Visualize your GitHub activity in a timeline.',
-		tech: ['Nextjs', 'Framer motion', 'Typescript', 'GraphQl', 'TailwindCSS'],
-		github: 'https://github.com/rohitsinghrawat/github-timeline',
-		url: 'https://github-timeline.vercel.app',
-		time: 'July 2024',
-	},
+
 	{
 		name: 'Fit Flow',
 		description: 'StackOverFlow for Gym rat',
@@ -73,7 +66,7 @@ export const projectData = [
 			'Shadcn UI',
 		],
 		github: 'https://github.com/rohitsinghrawat/fit-flow',
-		url: 'https://fit-flow.vercel.app',
+		url: 'https://fit-flow-live.vercel.app/',
 		time: 'Jun 2024 - July 2024',
 	},
 	{
@@ -88,7 +81,7 @@ export const projectData = [
 			'Cloudflare Workers',
 		],
 		github: 'https://github.com/rohitsinghrawat/hikari',
-		url: 'https://hikari.vercel.app',
+		url: 'https://hikari-zeta.vercel.app/',
 		time: 'May 2024',
 	},
 ];
