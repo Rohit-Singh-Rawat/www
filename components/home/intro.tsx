@@ -43,9 +43,10 @@ const Intro = () => {
 			<p className='text-sm sm:text-base text-muted-foreground leading-relaxed sm:leading-relaxed'>
 				Hey, I'm <span className='text-foreground'>Rohit Singh Rawat</span>, a{' '}
 				<AgeComponent birthDate={birthDate} /> Software Engineer who finds
-				beauty in <span className='text-foreground'>clarity</span>,{' '}
-				<span className='text-foreground'>design</span>, and the complexity
-				behind simple things.
+				beauty in <span className='text-foreground'>clarity</span>, the art of
+				simplifying complexity, and the intersection of{' '}
+				<span className='text-foreground'>design</span> and{' '}
+				<span className='text-foreground'>code</span>.
 			</p>
 			<p className='text-sm sm:text-base text-muted-foreground leading-relaxed sm:leading-relaxed'>
 				I started coding in late 2022 and have since worked at a{' '}

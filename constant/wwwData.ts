@@ -7,7 +7,7 @@ export const experienceData: ExperienceItem[] = [
 		isPresent: true,
 		description: [
 			'Building innovative solutions with cutting-edge technologies and scalable architectures.',
-			'Focusing on user-centric design patterns and modern development frameworks.',
+			'Focusing on fast delivery using modern development frameworks and tools.',
 		],
 	},
 	{
@@ -15,8 +15,8 @@ export const experienceData: ExperienceItem[] = [
 		time: 'June 2024 – October 2024',
 		isPresent: false,
 		description: [
-			'Full Stack Intern developing mentor-matching platform for educational technology.',
-			'Optimized backend performance and deployed cross-platform mobile applications.',
+			'Full Stack Intern building responsive landing pages and modern frontend interfaces.',
+			'Developed REST APIs, database integrations, and cross-platform mobile applications.',
 		],
 	},
 ];
