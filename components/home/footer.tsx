@@ -10,7 +10,7 @@ export default function Footer() {
 					href={`${process.env.NEXT_PUBLIC_OLD_PORTFOLIO_URL}`}
 					target='_blank'
 					rel='noopener noreferrer'
-					className='text-foreground hover:underline hover:decoration-muted-foreground hover:underline-offset-4 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+					className='text-foreground hover:underline hover:decoration-muted-foreground hover:underline-offset-4   rounded-sm'
 					aria-label='View previous portfolio version (opens in new tab)'
 				>
 					here

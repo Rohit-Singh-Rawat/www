@@ -46,7 +46,7 @@ export default async function Spotify() {
 								href={song.songUrl}
 								target='_blank'
 								rel='noopener noreferrer'
-								className='flex items-center gap-1 group focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+								className='flex items-center gap-1 group   rounded-sm'
 								aria-label={`Listen to ${song.title} by ${song.artist} on Spotify`}
 							>
 								<p className='truncate text-foreground group-hover:underline'>
@@ -137,7 +137,7 @@ export default async function Spotify() {
 						href={songUrl}
 						target='_blank'
 						rel='noopener noreferrer'
-						className='flex items-center gap-1 group focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+						className='flex items-center gap-1 group   rounded-sm'
 						aria-label={`Listen to ${title} by ${artist} on Spotify`}
 					>
 						<p className='truncate text-foreground group-hover:underline'>

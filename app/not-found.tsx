@@ -25,7 +25,7 @@ export default function NotFound() {
 					</p>
 					<Link
 						href='/'
-						className='text-foreground hover:text-muted-foreground transition-colors underline underline-offset-4 decoration-muted-foreground/50 font-light text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+						className='text-foreground hover:text-muted-foreground transition-colors underline underline-offset-4 decoration-muted-foreground/50 font-light text-sm   rounded-sm'
 						aria-label='Return to homepage'
 					>
 						Go home

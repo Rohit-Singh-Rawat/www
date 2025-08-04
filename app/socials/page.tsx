@@ -36,7 +36,7 @@ export default function SocialsPage() {
 									href={link.url}
 									target={link.external ? '_blank' : undefined}
 									rel={link.external ? 'noopener noreferrer' : undefined}
-									className='flex items-center justify-between py-2 border-b border-dashed border-border/50 hover:bg-accent/30 transition-colors group px-2 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+									className='flex items-center justify-between py-2 border-b border-dashed border-border/50 hover:bg-accent/30 transition-colors group px-2   rounded-sm'
 									aria-label={`Connect via ${link.name}${
 										link.external ? ' (opens in new tab)' : ''
 									}`}

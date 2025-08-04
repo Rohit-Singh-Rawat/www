@@ -31,7 +31,7 @@ export default function Links({ links }: LinksProps) {
 								href={link.url}
 								target={link.external ? '_blank' : undefined}
 								rel={link.external ? 'noopener noreferrer' : undefined}
-								className='text-foreground hover:text-muted-foreground transition-colors flex items-baseline gap-x-1 underline underline-offset-4 decoration-muted-foreground/50 group font-light text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+								className='text-foreground hover:text-muted-foreground transition-colors flex items-baseline gap-x-1 underline underline-offset-4 decoration-muted-foreground/50 group font-light text-sm   rounded-sm'
 								aria-label={`Contact via ${link.name}${
 									link.external ? ' (opens in new tab)' : ''
 								}`}
@@ -48,7 +48,7 @@ export default function Links({ links }: LinksProps) {
 						<li>
 							<Link
 								href='/socials'
-								className='text-foreground hover:text-muted-foreground transition-colors flex items-baseline gap-x-1 underline underline-offset-4 decoration-muted-foreground/50 group font-light text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+								className='text-foreground hover:text-muted-foreground transition-colors flex items-baseline gap-x-1 underline underline-offset-4 decoration-muted-foreground/50 group font-light text-sm   rounded-sm'
 								aria-label='View all social links'
 							>
 								See all{' '}

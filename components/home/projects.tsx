@@ -32,7 +32,7 @@ const Projects = ({ projects }: ProjectsProps) => {
 								href={project.url || '#'}
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block space-y-1 rounded-md group focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 p-2 -m-2'
+								className='block space-y-1 rounded-md group   p-2 -m-2'
 								aria-label={`View ${project.name} project: ${project.description}`}
 							>
 								<h3 className='text-foreground font-normal flex items-center gap-x-1 text-sm sm:text-base'>
@@ -57,7 +57,7 @@ const Projects = ({ projects }: ProjectsProps) => {
 						href='https://rsrcraft.me'
 						target='_blank'
 						rel='noopener noreferrer'
-						className='text-foreground hover:underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+						className='text-foreground hover:underline   rounded-sm'
 						aria-label='Visit rsrcraft.me to see all projects'
 					>
 						rsrcraft.me
