@@ -14,7 +14,7 @@ interface ProjectsProps {
 const Projects = ({ projects }: ProjectsProps) => {
 	return (
 		<section
-			className='mt-6 md:mt-8 space-y-2 w-full'
+			className=' space-y-2 w-full'
 			aria-labelledby='projects-heading'
 		>
 			<div id='projects-heading'>

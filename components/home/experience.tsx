@@ -7,7 +7,7 @@ interface ExperienceProps {
 const Experience = ({ experiences }: ExperienceProps) => {
 	return (
 		<section
-			className='mt-6 sm:mt-8 lg:mt-10 space-y-4 sm:space-y-6 lg:space-y-8 w-full'
+			className=' space-y-4 sm:space-y-6 lg:space-y-8 w-full'
 			aria-labelledby='experience-heading'
 		>
 			<div id='experience-heading'>

@@ -14,7 +14,7 @@ interface LinksProps {
 export default function Links({ links }: LinksProps) {
 	return (
 		<section
-			className='flex flex-col w-full my-10 space-y-4'
+			className='flex flex-col w-full mb-10 space-y-4'
 			aria-labelledby='contact-heading'
 		>
 			<div id='contact-heading'>

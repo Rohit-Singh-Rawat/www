@@ -10,15 +10,15 @@ export const metadata = generateMetadata({
 
 export default function SocialsPage() {
 	return (
-		<main
-			className='w-full py-8 flex-1'
-			role='main'
-		>
+		<>
 			<header>
 				<h1 className='text-xl font-medium mb-4'>Connect</h1>
 			</header>
 
-			<section aria-labelledby='social-links-heading'>
+			<section
+				aria-labelledby='social-links-heading'
+				className='w-full'
+			>
 				<h2
 					id='social-links-heading'
 					className='sr-only'
@@ -52,6 +52,6 @@ export default function SocialsPage() {
 					</ul>
 				</nav>
 			</section>
-		</main>
+		</>
 	);
 }

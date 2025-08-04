@@ -23,14 +23,14 @@ const Header = (props: Props) => {
 			>
 				<Link
 					href='/'
-					className='text-sm hover:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+					className='text-sm hover:text-muted-foreground rounded-sm'
 					aria-label='Go to home page'
 				>
 					Home
 				</Link>
 				<Link
 					href='/blogs'
-					className='text-sm hover:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm'
+					className='text-sm hover:text-muted-foreground rounded-sm'
 					aria-label='Go to blogs page'
 				>
 					Blogs

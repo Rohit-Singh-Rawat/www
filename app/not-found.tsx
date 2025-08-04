@@ -4,17 +4,14 @@ import Link from 'next/link';
 
 export default function NotFound() {
 	return (
-		<main
-			className='flex flex-col items-center justify-center text-center space-y-4 flex-1'
-			role='main'
-		>
+		<>
 			<section aria-labelledby='error-heading'>
 				<Image
 					src={notFound}
 					alt='Illustration of a person looking lost, representing page not found'
 					width={500}
 					height={300}
-					className='aspect-video'
+					className='aspect-video my-5'
 				/>
 				<div className='flex flex-col items-center justify-center space-y-4 z-10'>
 					<h1
@@ -35,6 +32,6 @@ export default function NotFound() {
 					</Link>
 				</div>
 			</section>
-		</main>
+		</>
 	);
 }

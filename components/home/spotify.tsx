@@ -16,7 +16,7 @@ export default async function Spotify() {
 			const song = recentlyPlayedData.tracks[0];
 			return (
 				<aside
-					className='flex flex-col w-full mt-10 -space-y-1'
+					className='flex flex-col w-full  -space-y-1'
 					aria-labelledby='recent-music'
 				>
 					<h3
@@ -105,7 +105,7 @@ export default async function Spotify() {
 
 	return (
 		<aside
-			className='flex flex-col w-full mt-10 -space-y-1'
+			className='flex flex-col w-full  -space-y-1'
 			aria-labelledby='current-music'
 		>
 			<h3

@@ -33,6 +33,7 @@ export default function RootLayout({
 						id='main-content'
 						role='main'
 						aria-label='Main content'
+						className='space-y-6 sm:space-y-8 lg:space-y-10 flex flex-col items-center justify-center w-full text-left flex-1'
 					>
 						{children}
 					</main>
