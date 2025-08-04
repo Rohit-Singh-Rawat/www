@@ -7,8 +7,9 @@ import Header from '@/components/home/Header';
 import Footer from '@/components/home/footer';
 import Logo from '@/components/home/logo';
 import { generateMetadata } from '@/lib/seo';
+import { Analytics } from '@vercel/analytics/next';
 
-export const metadata = generateMetadata();
+export const metadata: Metadata = generateMetadata();
 
 export default function RootLayout({
 	children,
@@ -39,6 +40,7 @@ export default function RootLayout({
 					</main>
 					<Footer />
 				</div>
+				<Analytics />
 			</body>
 		</html>
 	);
