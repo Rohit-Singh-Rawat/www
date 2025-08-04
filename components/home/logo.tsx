@@ -1,10 +1,12 @@
+import { cn } from '@/lib/utils';
+
 interface LogoProps {
 	className?: string;
 }
 
 const Logo = ({ className }: LogoProps) => {
 	return (
-		<div className={`w-8 h-8 ${className || ''}`}>
+		<div className={cn('w-8 h-8', className)}>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				viewBox='0 0 484 456'

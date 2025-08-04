@@ -1,5 +1,5 @@
 import Heading from '@/components/home/heading';
-import OgCard from '@/components/og-card';
+import OgCard from '@/components/og-card/og-card';
 import { generateMetadata } from '@/lib/seo';
 
 export const metadata = generateMetadata({

@@ -1,7 +1,5 @@
 'use client';
 
-import Logo from '@/components/home/logo';
-
 interface OgCardProps {
 	name?: string;
 	title?: string;
@@ -25,7 +23,6 @@ export default function OgCard({
 					<div className='absolute -bottom-6 -right-6 w-6 h-6 border-l border-t border-border/50 border-dashed'></div>
 
 					<div className='flex flex-col gap-1 relative'>
-						<Logo className='w-1 h-1 scale-[0.5] absolute top-[3px] left-1.5' />
 						<h1 className='text-2xl font-medium'>{name}</h1>
 						<h2 className='text-muted-foreground bg-accent text-center px-2'>
 							{title}
