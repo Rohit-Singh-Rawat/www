@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/ui/Link';
 import ArrowUpRight from '../icons/arrow';
 import Heading from './heading';
 interface ProjectItem {

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/ui/Link';
 import VisitorCounter from '../analytics/VisitorCounter';
 
 export default function Footer() {
