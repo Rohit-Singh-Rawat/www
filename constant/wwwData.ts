@@ -2,16 +2,27 @@ import { ExperienceItem } from '@/types';
 
 export const experienceData: ExperienceItem[] = [
 	{
-		name: 'Linkverse Labs',
+		name: 'Freelance',
+		designation: 'Full Stack Engineer',
 		time: 'May 2025',
 		isPresent: true,
 		description: [
-			'Building innovative solutions with cutting-edge technologies and scalable architectures.',
-			'Focusing on fast delivery using modern development frameworks and tools.',
+			'Designed and engineered an LMS platform for railway training, featuring role-based dashboards, progress tracking, and course management.',
+		],
+	},
+	{
+		name: 'Linkverse Labs',
+		designation: 'Software Engineer',
+		time: 'May 2025 - Sep 2025',
+		isPresent: false,
+		description: [
+			'Designed and developed full-stack applications using Next.js, Supabase, and Vercel AI SDK from ground up to production deployment.',
+			'Architected REST APIs, implemented database schemas, and managed cloud infrastructure for seamless scalability and performance.',
 		],
 	},
 	{
 		name: 'Leadlly',
+		designation: 'Full Stack Intern',
 		time: 'June 2024 – October 2024',
 		isPresent: false,
 		description: [
@@ -24,15 +35,7 @@ export const projectData = [
 	{
 		name: 'Pixlr Chat',
 		description: 'Multi models AI chat app with AI agents',
-		tech: [
-			'Nextjs',
-			'Express',
-			'Prisma',
-			'PostgreSQL',
-			'WebSockets',
-			'TailwindCSS',
-			'AWS',
-		],
+		tech: ['Nextjs', 'Express', 'Prisma', 'PostgreSQL', 'WebSockets', 'TailwindCSS', 'AWS'],
 		github: 'https://github.com/rohitsinghrawat/echo-chat',
 		url: 'https://pixlr.chat/',
 		time: 'Nov 2024 - Dec 2024',
@@ -40,15 +43,7 @@ export const projectData = [
 	{
 		name: 'Echo Chat',
 		description: 'Real-time chat rooms',
-		tech: [
-			'Nextjs',
-			'Express',
-			'Prisma',
-			'PostgreSQL',
-			'WebSockets',
-			'TailwindCSS',
-			'AWS',
-		],
+		tech: ['Nextjs', 'Express', 'Prisma', 'PostgreSQL', 'WebSockets', 'TailwindCSS', 'AWS'],
 		github: 'https://github.com/rohitsinghrawat/echo-chat',
 		url: 'https://echo.rsrcraft.me',
 		time: 'Nov 2024 - Dec 2024',
@@ -57,14 +52,7 @@ export const projectData = [
 	{
 		name: 'Fit Flow',
 		description: 'StackOverFlow for Gym rat',
-		tech: [
-			'Nextjs',
-			'Prisma',
-			'PostgreSQL',
-			'Tailwind',
-			'TailwindCSS',
-			'Shadcn UI',
-		],
+		tech: ['Nextjs', 'Prisma', 'PostgreSQL', 'Tailwind', 'TailwindCSS', 'Shadcn UI'],
 		github: 'https://github.com/rohitsinghrawat/fit-flow',
 		url: 'https://fit-flow-live.vercel.app/',
 		time: 'Jun 2024 - July 2024',
@@ -72,14 +60,7 @@ export const projectData = [
 	{
 		name: 'Hikari',
 		description: 'Create, manage, and share blogs.',
-		tech: [
-			'React',
-			'Prisma',
-			'PostgreSQL',
-			'Tailwind',
-			'TailwindCSS',
-			'Cloudflare Workers',
-		],
+		tech: ['React', 'Prisma', 'PostgreSQL', 'Tailwind', 'TailwindCSS', 'Cloudflare Workers'],
 		github: 'https://github.com/rohitsinghrawat/hikari',
 		url: 'https://hikari-zeta.vercel.app/',
 		time: 'May 2024',

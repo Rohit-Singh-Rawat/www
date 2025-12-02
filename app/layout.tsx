@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import satoshi from '@/lib/satoshiFont';
+import bespoke from '@/lib/bespokeFont';
 import BlurGradient from '../components/bg/BlurGradient';
 import NoiseBackground from '../components/bg/NoiseBackground';
 import Header from '@/components/home/Header';
@@ -16,9 +17,9 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return (
+	return (	
 		<html lang='en'>
-			<body className={`${satoshi.className} antialiased`}>
+			<body className={`${satoshi.className} ${bespoke.variable} antialiased`}>
 				<a
 					href='#main-content'
 					className='sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-primary-foreground px-4 py-2 rounded-md z-[200]'

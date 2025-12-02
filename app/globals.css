@@ -116,3 +116,20 @@ body {
 	clip: auto;
 	white-space: normal;
 }
+
+.font-bespoke {
+	font-family: var(--font-bespoke);
+}
+@keyframes scribble {
+	from {
+		stroke-dashoffset: 1;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+/* Text selection highlight styles */
+::selection {
+	background-color: var(--primary);
+	color: var(--background);
+}
