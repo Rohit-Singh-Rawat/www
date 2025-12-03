@@ -1,3 +1,4 @@
+import { links } from '@/constant/wwwData';
 const calculateAge = (birthDate: string) => {
 	const birth = new Date(birthDate);
 	const today = new Date();
@@ -109,14 +110,14 @@ const Intro = () => {
 			<p className='text-sm sm:text-base text-muted-foreground leading-relaxed sm:leading-relaxed'>
 				You can reach out to me on{' '}
 				<ScribbleLink
-					href='https://twitter.com/rohitsinghrawat'
+					href={links.x.url}
 					className='font-bespoke font-light text-sm'
 				>
 					Twitter
 				</ScribbleLink>{' '}
 				or see my work on{' '}
 				<ScribbleLink
-					href='https://github.com/rohitsinghrawat'
+					href={links.github.url}
 					className='font-bespoke font-light text-sm'
 				>
 					GitHub

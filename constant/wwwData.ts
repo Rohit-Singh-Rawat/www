@@ -66,48 +66,49 @@ export const projectData = [
 		time: 'May 2024',
 	},
 ];
-export const linksData = [
-	{
+export const links = {
+	email: {
 		name: 'Email',
 		slug: 'email',
 		url: 'mailto:rohitzrawat2003@gmail.com',
 		external: true,
 	},
-	{
+	x: {
 		name: 'X ',
 		slug: 'x',
 		url: 'https://x.com/Spacing_Whale',
 		external: true,
 	},
-
-	{
+	github: {
 		name: 'GitHub',
 		slug: 'github',
 		url: 'https://github.com/Rohit-Singh-Rawat',
 		external: true,
 	},
-	{
+	cv: {
 		name: 'CV',
 		slug: 'cv',
 		url: 'https://drive.google.com/file/d/1IV8292q0tqiTsEC_pmB3HczUhlpdkKRP/view',
 		external: true,
 	},
-	{
+	linkedin: {
 		name: 'LinkedIn',
 		slug: 'linkedin',
 		url: 'https://www.linkedin.com/in/rohit-singh-rawat-space/',
 		external: true,
 	},
-	{
+	telegram: {
 		name: 'Telegram',
 		slug: 'telegram',
 		url: 'https://t.me/R_S_Rohit_0',
 		external: true,
 	},
-	{
+	discord: {
 		name: 'Discord',
 		slug: 'discord',
 		url: 'https://discord.com/users/_r_s_r_',
 		external: true,
 	},
-];
+};
+
+export const linksData = Object.values(links);
