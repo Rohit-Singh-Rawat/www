@@ -15,7 +15,7 @@ const Heading = ({
 }: HeadingProps) => {
 	const headingElement = React.createElement(
 		`h${level}`,
-		{ className: 'text-base sm:text-lg lg:text-xl font-medium' },
+		{ className: 'text-base sm:text-lg font-normal' },
 		title
 	);
 

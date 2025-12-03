@@ -2,6 +2,7 @@ import { getNowPlaying, getRecentlyPlayed } from '@/lib/spotify';
 import Image from 'next/image';
 import Link from 'next/link';
 import ArrowUpRight from '@/components/icons/arrow';
+import { Music } from '../icons/music';
 
 export default async function Spotify() {
 	let nowPlayingData = await getNowPlaying();
@@ -9,10 +10,7 @@ export default async function Spotify() {
 	if (typeof nowPlayingData === 'string') {
 		const recentlyPlayedData = await getRecentlyPlayed();
 
-		if (
-			typeof recentlyPlayedData !== 'string' &&
-			recentlyPlayedData.tracks.length > 0
-		) {
+		if (typeof recentlyPlayedData !== 'string' && recentlyPlayedData.tracks.length > 0) {
 			const song = recentlyPlayedData.tracks[0];
 			return (
 				<aside
@@ -49,7 +47,7 @@ export default async function Spotify() {
 								className='flex items-center gap-1 group   rounded-sm'
 								aria-label={`Listen to ${song.title} by ${song.artist} on Spotify`}
 							>
-								<p className='truncate text-foreground group-hover:underline'>
+								<p className='truncate text-foreground relative before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px] before:bg-foreground before:origin-right before:scale-x-0 before:transition-transform before:duration-300 group-hover:before:origin-left group-hover:before:scale-x-100'>
 									{song.title}
 								</p>
 								<ArrowUpRight
@@ -95,7 +93,7 @@ export default async function Spotify() {
 					role='status'
 					aria-live='polite'
 				>
-					🎶 No tracks available right now. 🎶
+					<Music className='w-4 h-4' /> No tracks available right now. <Music className='w-4 h-4' />
 				</aside>
 			);
 		}
@@ -120,7 +118,7 @@ export default async function Spotify() {
 						alt={`Album cover for ${title} by ${artist}`}
 						width={50}
 						height={50}
-						className='rounded-sm object-cover z-10 relative'
+						className='rounded-sm object-cover z-10 relative bg-black'
 						src={albumImageUrl}
 					/>
 					<div
@@ -140,7 +138,7 @@ export default async function Spotify() {
 						className='flex items-center gap-1 group   rounded-sm'
 						aria-label={`Listen to ${title} by ${artist} on Spotify`}
 					>
-						<p className='truncate text-foreground group-hover:underline'>
+						<p className='truncate text-foreground relative before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px] before:bg-foreground before:origin-right before:scale-x-0 before:transition-transform before:duration-300 group-hover:before:origin-left group-hover:before:scale-x-100'>
 							{title}
 						</p>
 						<ArrowUpRight
@@ -163,9 +161,7 @@ export default async function Spotify() {
 				>
 					<span
 						className={`relative inline-flex rounded-full h-2 w-2 ${
-							isPlaying
-								? 'bg-green-500 animate-pulse'
-								: 'bg-muted-foreground/30'
+							isPlaying ? 'bg-green-500 animate-pulse' : 'bg-muted-foreground/30'
 						}`}
 					></span>
 				</span>
