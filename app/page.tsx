@@ -10,7 +10,7 @@ const page = () => {
 		<>
 			<Intro />
 			<Spotify />
-			<Experience experiences={experienceData} />
+			<Experience experiences={experienceData} isLookingForJob={true} />
 			<Projects projects={projectData} />
 			<Links links={linksData} />
 		</>
