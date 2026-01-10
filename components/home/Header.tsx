@@ -1,4 +1,5 @@
 import Link from '@/components/ui/Link';
+import { TextFlip } from '../animated/text-flip';
 
 type Props = {};
 const Header = (props: Props) => {
@@ -13,11 +14,11 @@ const Header = (props: Props) => {
 					className='text-sm text-muted-foreground font-bespoke font-light'
 					role='doc-subtitle'
 				>
-					Software Engineer
+					<TextFlip words={['Product Engineer', 'Design Engineer', 'Software Engineer', 'Full-Stack Engineer', 'Freelancer', 'Gym Gore']} />
 				</p>
 			</div>
 			<nav
-				className='flex flex-row gap-4'
+				className='flex flex-row gap-4 '
 				role='navigation'
 				aria-label='Main navigation'
 			>

@@ -1,4 +1,9 @@
+'use client';
+
 import { links } from '@/constant/wwwData';
+import VariableFontHoverByLetter from '../animated/variable-font-text';
+import Typewriter from '../animated/typewriter';
+import { useRef } from 'react';
 const calculateAge = (birthDate: string) => {
 	const birth = new Date(birthDate);
 	const today = new Date();
@@ -78,10 +83,11 @@ const ScribbleLink = ({
 
 const Intro = () => {
 	const birthDate = process.env.NEXT_PUBLIC_BIRTH_DATE || '2003-09-01';
-
+	const groupRef = useRef<HTMLElement>(null);
 	return (
 		<section
-			className='mt-6 sm:mt-8 space-y-4 sm:space-y-6 lg:space-y-8 font-thin'
+			ref={groupRef}
+			className='group mt-6 sm:mt-8 space-y-4 sm:space-y-6 font-thin'
 			aria-labelledby='intro-heading'
 			role='region'
 		>
@@ -96,8 +102,27 @@ const Intro = () => {
 				<AgeComponent birthDate={birthDate} /> Software Engineer who finds beauty in{' '}
 				<span className='text-foreground'>clarity</span>, the art of simplifying complexity, and the
 				intersection of{' '}
-				<span className='text-foreground italic font-bespoke font-light text-sm'>design</span> and{' '}
-				<span className='text-foreground italic'>code</span>.
+				<span className='text-foreground italic font-bespoke text-sm'>
+					<VariableFontHoverByLetter
+						label='design'
+						groupRef={groupRef}
+						fromFontVariationSettings="'wght' 300, 'slnt' 0"
+						toFontVariationSettings="'wght' 500, 'slnt' -20"
+					/>
+				</span>{' '}
+				and{' '}
+				<span className='text-foreground italic inline-block'>
+					<Typewriter
+						text='code'
+						className='font-bespoke text-sm'
+						speed={200}
+						initialDelay={400}
+						showCursor={true}
+						cursorChar='|'
+						cursorClassName='ml-0.5 text-primary/80'
+					/>
+				</span>
+				.
 			</p>
 			<p className='text-sm sm:text-base text-muted-foreground leading-relaxed sm:leading-relaxed'>
 				I've worked at a startup and an agency as a{' '}
