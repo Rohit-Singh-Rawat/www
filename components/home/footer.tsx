@@ -22,7 +22,7 @@ export default function Footer() {
 			>
 				<div className='flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 text-xs sm:text-sm text-muted-foreground'>
 					<div className='order-2 sm:order-1'>
-						<p>© 2025 RohitSinghRawat. All rights reserved.</p>
+						<p>© {new Date().getFullYear()} RohitSinghRawat. All rights reserved.</p>
 					</div>
 					<div className='flex items-center gap-3 sm:gap-4 order-1 sm:order-2'>
 						<time

@@ -10,8 +10,11 @@ const page = () => {
 		<>
 			<Intro />
 			<Spotify />
-			<Experience experiences={experienceData} isLookingForJob={true} />
-			<Projects projects={projectData} />
+			<Experience
+				experiences={experienceData}
+				isLookingForJob={true}
+			/>
+			<Projects projects={projectData.slice(0, 3)} />
 			<Links links={linksData} />
 		</>
 	);

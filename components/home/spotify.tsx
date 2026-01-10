@@ -89,11 +89,46 @@ export default async function Spotify() {
 		} else {
 			return (
 				<aside
-					className='flex flex-col w-full my-10 p-4 text-center text-muted-foreground border border-border/50 rounded-md'
+					className='flex flex-col w-full  -space-y-1'
 					role='status'
 					aria-live='polite'
+					aria-labelledby='no-music'
 				>
-					<Music className='w-4 h-4' /> No tracks available right now. <Music className='w-4 h-4' />
+					<h3
+						id='no-music'
+						className='sr-only'
+					>
+						No music available
+					</h3>
+					<article className='flex gap-x-2 p-1 bg-accent border border-border/50 shadow-inner shadow-black/20 rounded-md w-full items-end z-10'>
+						<figure className='relative w-[50px] h-[50px] flex-shrink-0'>
+							<div className='w-[50px] h-[50px] rounded-sm bg-muted flex items-center justify-center z-10 relative'>
+								<Music
+									className='w-6 h-6 text-muted-foreground'
+									aria-hidden='true'
+								/>
+							</div>
+							<div
+								className='absolute -right-4 top-1/2 -translate-y-1/2 w-[45px] h-[45px] bg-gradient-to-br from-muted via-muted-foreground/50 to-border rounded-full shadow-lg opacity-80 z-0'
+								aria-hidden='true'
+							>
+								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-foreground/10 to-transparent'></div>
+							</div>
+						</figure>
+						<div className='flex flex-col overflow-hidden w-full ml-4'>
+							<p className='truncate text-foreground'>No tracks available</p>
+							<p className='truncate text-muted-foreground font-light'>Check back later</p>
+						</div>
+					</article>
+					<footer className='flex flex-row gap-x-1.5 items-center pl-1 border border-border/50 shadow-inner shadow-black/20 rounded-md mx-1 py-0.5 pt-1.5 animate-in slide-in-from-top-2 duration-300 delay-500'>
+						<span
+							className='relative flex h-2 w-2'
+							aria-hidden='true'
+						>
+							<span className='relative inline-flex rounded-full h-2 w-2 bg-muted-foreground/30'></span>
+						</span>
+						<div className='text-xs text-muted-foreground/50'>Not playing</div>
+					</footer>
 				</aside>
 			);
 		}
