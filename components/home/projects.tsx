@@ -1,6 +1,7 @@
 import Link from '@/components/ui/Link';
-import ArrowUpRight from '../icons/arrow';
+import ArrowUpRight, { RightArrow } from '../icons/arrow';
 import Heading from './heading';
+import { TextShimmer } from '../animated/text-shimmer';
 interface ProjectItem {
 	name: string;
 	description: string;
@@ -14,14 +15,16 @@ interface ProjectsProps {
 const Projects = ({ projects }: ProjectsProps) => {
 	return (
 		<section
-			className=' space-y-2 w-full'
+			className=' space-y-4 sm:space-y-6  w-full'
 			aria-labelledby='projects-heading'
 		>
 			<div id='projects-heading'>
-				<Heading title='Projects' />
+				<Link href='/projects'>
+					<Heading title='Projects' />
+				</Link>
 			</div>
 			<ul
-				className='space-y-2'
+				className='space-y-4 sm:space-y-5'
 				role='list'
 				aria-label='Featured projects'
 			>
@@ -32,7 +35,7 @@ const Projects = ({ projects }: ProjectsProps) => {
 								href={project.url || '#'}
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block space-y-1 rounded-md group   p-2 -m-2'
+								className='block space-y-1 rounded-md group   p'
 								aria-label={`View ${project.name} project: ${project.description}`}
 							>
 								<h3 className='text-foreground font-normal flex items-center gap-x-1 text-sm sm:text-base'>
@@ -50,19 +53,20 @@ const Projects = ({ projects }: ProjectsProps) => {
 					</li>
 				))}
 			</ul>
-			<footer className='mt-4 md:mt-6'>
-				<p className='text-sm text-muted-foreground'>
-					Find all fun at{' '}
-					<Link
-						href='https://rsrcraft.me'
-						target='_blank'
-						rel='noopener noreferrer'
-						className='text-foreground hover:underline   rounded-sm'
-						aria-label='Visit rsrcraft.me to see all projects'
+			<footer className='mt-4 sm:mt-6'>
+				<Link
+					href='/projects'
+					className='text-foreground  group text-sm text-muted-foreground hover:text-foreground transition-colors rounded-sm flex items-center gap-x-1'
+					aria-label='View all projects'
+				>
+					<TextShimmer
+						duration={2}
+						spread={2}
 					>
-						rsrcraft.me
-					</Link>
-				</p>
+						View all projects
+					</TextShimmer>
+					{<RightArrow />}
+				</Link>
 			</footer>
 		</section>
 	);

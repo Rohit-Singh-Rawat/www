@@ -41,4 +41,44 @@ function ArrowUpRight({ title = 'badge 13', ...props }: IconProps) {
 	);
 }
 
+type RightArrowProps = SVGProps<SVGSVGElement>;
+
+const RightArrow = ({ className, ...props }: RightArrowProps) => {
+	return (
+		<svg
+			className={` ${className || ''}`}
+			width='10'
+			height='10'
+			viewBox='0 0 10 10'
+			aria-hidden='true'
+			{...props}
+		>
+			<g fillRule='evenodd'>
+				<line
+					className='transition-all duration-300 [stroke-dasharray:9] [stroke-dashoffset:9] group-hover:[stroke-dashoffset:0]'
+					fill='none'
+					stroke='currentColor'
+					strokeWidth='1'
+					strokeLinecap='round'
+					x1='1'
+					y1='5'
+					x2='9'
+					y2='5'
+				/>
+				<path
+					className='transition-transform duration-300 group-hover:translate-x-1 group-hover:delay-0 delay-100'
+					fill='none'
+					stroke='currentColor'
+					strokeWidth='1'
+					strokeLinecap='round'
+					strokeLinejoin='round'
+					d='M1 1l4 4-4 4'
+				/>
+			</g>
+		</svg>
+	);
+};
+
+export { RightArrow };
+
 export default ArrowUpRight;
