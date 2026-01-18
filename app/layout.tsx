@@ -9,7 +9,7 @@ import Footer from '@/components/home/footer';
 import Logo from '@/components/home/logo';
 import { generateMetadata } from '@/lib/seo';
 import { Analytics } from '@vercel/analytics/next';
-
+import { ViewTransition } from 'react';
 export const metadata: Metadata = generateMetadata();
 
 export default function RootLayout({
@@ -37,7 +37,9 @@ export default function RootLayout({
 						aria-label='Main content'
 						className='space-y-6 sm:space-y-8 lg:space-y-10 flex flex-col items-center justify-center w-full text-left flex-1'
 					>
-						{children}
+						<ViewTransition>
+							{children}
+						</ViewTransition>
 					</main>
 					<Footer />
 				</div>
